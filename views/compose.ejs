@@ -1,0 +1,12 @@
+<%- include("header.ejs") %>
+
+<div class="form-compose">
+    <form action="new-compose" method="post">
+        <input type="text" name="title" id="title" placeholder="Title" required autocomplete="off">
+        <textarea name="description" id="description" cols="30" rows="10" placeholder="Description here" required autocomplete="off"></textarea>
+        <input type="submit" value="ADD" id="submit-button">
+    </form>
+</div>
+
+
+<%- include("footer.ejs") %>

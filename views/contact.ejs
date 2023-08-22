@@ -1,0 +1,9 @@
+<%- include("header.ejs") %>
+<h1>Contact Us</h1>
+<% if(locals.contact_us) { %>
+    <p><%= contact_us %></p>
+<% } else { %>
+    <p>Contact content</p>
+<% } %>
+
+<%- include("footer.ejs") %>

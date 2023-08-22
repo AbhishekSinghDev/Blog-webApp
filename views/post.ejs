@@ -1,0 +1,10 @@
+<%- include("header.ejs") %>
+
+<% if(locals.title && locals.des) { %>
+        <h1><%= title %></h1>
+        <p><%= des %></p>
+<% } else  {%>
+    <p>Some text</p>
+<% } %>
+
+<%- include("footer.ejs") %>

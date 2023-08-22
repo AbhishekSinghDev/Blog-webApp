@@ -1,0 +1,9 @@
+<%- include("header.ejs") %>
+<h1>About</h1>
+<% if(locals.about_us) { %>
+    <p><%= about_us %></p>
+<% } else { %>
+    <p>About content</p>
+<% } %>
+
+<%- include("footer.ejs") %>

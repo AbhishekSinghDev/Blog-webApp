@@ -1,0 +1,19 @@
+<%- include("header.ejs") %>
+<h1>Home</h1>
+<% if(locals.homeStartContent) { %>
+    <p><%= homeStartContent %></p>
+<% } else { %>
+    <p>Home starting content</p>
+<% } %>
+
+<% if(locals.blog) { %>
+    <% for(i in blog) { %>
+        <h1><%= i %></h1>
+        <p><%= blog[i] %></p>
+    <% } %>
+<% } else  {%>
+    <p>Some text</p>
+<% } %>
+
+
+<%- include("footer.ejs") %>
